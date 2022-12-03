@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    string str = "what is your name ?";
+    string s = str;
+    int j=0;
+    for(int i=0;i<str.length();i++){
+        if(!(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')){
+            s[j]=str[i];
+            j++;
+        }
+    }
+    for(int k=0;k<j;k++){
+        cout<<s[k];
+    }
+    return 0;
+}
