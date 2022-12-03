@@ -1,0 +1,20 @@
+// Day 60.(Reverse the given string)
+
+#include <iostream>
+using namespace std;
+string reversestring(string str){
+string s=str;
+int j=0;
+for(int i=str.length()-1;i>=0;i--){
+    s[j]=str[i];
+    j++;
+}
+return s;
+}
+int main(){
+    string str = "for";
+    string x = reversestring(str);
+    cout<<x;
+
+    return 0;
+}
