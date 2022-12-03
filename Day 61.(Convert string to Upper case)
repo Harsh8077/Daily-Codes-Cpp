@@ -1,0 +1,13 @@
+//Day 61. (Convert string to Upper case)
+
+#include <iostream>
+using namespace std;
+int main(){
+    string str = "University";
+    for(int i=0;i<str.length();i++){
+        char c = str[i];
+        str[i] = toupper(c);
+    }
+    cout<<str;
+    return 0;
+}
